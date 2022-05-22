@@ -1,7 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Momentum App</title>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<h2 id="clock"></h2>
+
+<form id="login-form">
+    <input type="text" id="id" />
+    <input type="password" id="pwd" />
+    <input type="submit" id="signIn" value="로그인"/>
+    <input type="submit" id="signUp" value="가입"/>
+</form>
+
+<h1 id="greeting"></h1>
+<form id="todo-form" class="hidden">
+    <h3>오늘 할 일을 입력하세요.</h3>
+    <input type="text" id="inputTodo" />
+    <input type="submit" value="입력" />
+</form>
+<ul id="todo-list"></ul>
+
+<div id="weather">
+    <span></span>
+    <span></span>
+</div>
+
+
+<script src="js/signIn.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/quotes.js"></script>
+<script src="js/background.js"></script>
+<script src="js/todo.js"></script>
+<script src="js/weather.js"></script>
+<script src="css/style.css"></script>
 </body>
 </html>
